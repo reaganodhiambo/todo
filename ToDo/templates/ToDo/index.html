@@ -1,0 +1,12 @@
+<h1>To Do App</h1>
+
+{% for todo in todo_list %}
+    {% if todo.complete %}
+        <p><strike> {{ todo.text }} </strike></p>
+    {% else %}
+        <p> {{ todo.text }} </p>
+    {% endif %}
+
+
+
+{% endfor %}
